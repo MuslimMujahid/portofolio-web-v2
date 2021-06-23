@@ -4,9 +4,9 @@ import {
     Nav__Container,
     Nav__Logo,
     Nav__Links,
-    Nav__Links__item,
-    Nav__Links__item__contact
+    Nav__Links__item
 } from './NavbarElements'
+import Button from '../Common/Button'
 
 const Navbar = () => {
     return (
@@ -25,9 +25,9 @@ const Navbar = () => {
                     <Nav__Links__item>
                         Projects
                     </Nav__Links__item>
-                    <Nav__Links__item__contact>
+                    <Button type={0} width="8rem" height="2.6rem">
                         Contact
-                    </Nav__Links__item__contact>      
+                    </Button>     
                 </Nav__Links>
             </Nav__Container>
         </Nav>

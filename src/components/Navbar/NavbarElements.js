@@ -35,28 +35,7 @@ export const Nav__Links__item = styled.li`
     transition: all ease .2s;
 
     :hover {
-        font-size: 1.2rem;
-        width: 6rem;
         cursor: pointer;
         border-bottom: solid 2.4px var(--primary-color-3);
-    }
-`
-
-export const Nav__Links__item__contact = styled.li`
-    background: var(--primary-color-3);
-    border: solid 2px var(--primary-color-3);
-    width: 8rem;
-    height: 2.6rem;   
-    display: grid;
-    place-items: center;
-    align-self: center;
-    border-radius: 24px;
-    transition: all ease .2s;
-    
-    :hover {
-        width: 10rem;
-        margin-left: 2rem;
-        cursor: pointer;
-        background: var(--primary-color-2);
     }
 `
