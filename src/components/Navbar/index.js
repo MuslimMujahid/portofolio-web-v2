@@ -25,7 +25,7 @@ const Navbar = () => {
                     <Nav__Links__item>
                         Projects
                     </Nav__Links__item>
-                    <Button type={0} width="8rem" height="2.6rem">
+                    <Button type={1} width="8rem" height="2.6rem">
                         Contact
                     </Button>     
                 </Nav__Links>

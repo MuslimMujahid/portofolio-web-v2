@@ -24,7 +24,7 @@ const About = () => {
                     <About__Content>
                         I love to learn and create new things. Solving problem with creative approach and teamwork. passionate in programming. Experienced in working on real team project.
                     </About__Content>
-                    <Button type={0} width="12rem" height="3rem">
+                    <Button type={1} width="12rem" height="3rem">
                         <a href="#" target="__blank">Download Resume</a>
                     </Button>
                 </div>

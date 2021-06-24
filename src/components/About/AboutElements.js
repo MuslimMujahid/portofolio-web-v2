@@ -4,7 +4,7 @@ export const Container = styled.div`
     background: var(--primary-color-2);
 
     a {
-        color: var(--text-color-1);
+        color: var(--text-color-2);
         text-decoration: none;
     }
 

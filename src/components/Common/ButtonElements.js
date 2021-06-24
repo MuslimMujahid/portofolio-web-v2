@@ -21,3 +21,19 @@ export const Button_0 = styled(Button)`
     }
 `
 
+export const Button_1 = styled(Button)`
+    color: var(--text-color-2);
+    background: transparent;
+    border: solid 2px var(--primary-color-3);
+
+    :hover {
+        cursor: pointer;
+        background: var(--primary-color-3);
+        color: var(--text-color-1);
+
+        * {
+            color: var(--text-color-1);
+        }
+    }
+`
+

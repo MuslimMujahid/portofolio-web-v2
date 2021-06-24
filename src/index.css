@@ -3,10 +3,10 @@
 :root {
   --primary-color-1: #1D1E2D;
   --primary-color-2: #232439;
-  --primary-color-3: #473EA9;
+  --primary-color-3: #9A8AFF;
 
   --text-color-1: #FFFFFF;
-  --text-color-2: #473EA9;
+  --text-color-2: #9A8AFF;
 
   --page-space: 8rem;
   --item-space: .8rem;
@@ -22,11 +22,13 @@ li {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  letter-spacing: .05rem;
 }
 
 body {
   margin: 0;
   font-family: 'Titillium Web';
+  font-size: 1.125rem;
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
