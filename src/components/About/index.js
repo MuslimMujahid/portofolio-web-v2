@@ -1,34 +1,34 @@
 import React from 'react'
 import {
     Container,
-    About__Container,
-    About__Image,
-    About__Content
+    AboutContainer,
+    AboutImage,
+    AboutContent
 } from './AboutElements'
 import {
     Button,
-    Section__Title 
+    SectionTitle 
 } from '../Common'
 
 const About = () => {
     return (
         <Container>
-            <About__Container>
+            <AboutContainer>
                 <div>
-                    <About__Image>
+                    <AboutImage>
                         <img src="/profile.jpg" alt="my image" />
-                    </About__Image>
+                    </AboutImage>
                 </div>
                 <div>
-                    <Section__Title> About me </Section__Title>
-                    <About__Content>
+                    <SectionTitle> About me </SectionTitle>
+                    <AboutContent>
                         I love to learn and create new things. Solving problem with creative approach and teamwork. passionate in programming. Experienced in working on real team project.
-                    </About__Content>
+                    </AboutContent>
                     <Button type={1} width="12rem" height="3rem">
-                        <a href="#" target="__blank">Download Resume</a>
+                        <a href="#" target="_blank">Download Resume</a>
                     </Button>
                 </div>
-            </About__Container>
+            </AboutContainer>
         </Container>
     )
 }

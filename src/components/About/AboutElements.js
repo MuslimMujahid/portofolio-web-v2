@@ -1,4 +1,26 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
+
+const SlideInLeft = keyframes`
+    0% { 
+        transform: translateX(-50%); 
+        opacity: 0;
+    }
+    100% { 
+        transform: translateX(0); 
+        opacity: 1;
+    }
+`
+
+const SlideInRight = keyframes`
+    0% { 
+        transform: translateX(50%); 
+        opacity: 0;
+    }
+    100% { 
+        transform: translateX(0); 
+        opacity: 1;
+    }
+`
 
 export const Container = styled.div`
     background: var(--primary-color-2);
@@ -7,10 +29,9 @@ export const Container = styled.div`
         color: var(--text-color-2);
         text-decoration: none;
     }
-
 `
 
-export const About__Container = styled.div`
+export const AboutContainer = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 8rem 0;
@@ -18,21 +39,23 @@ export const About__Container = styled.div`
     & > div {
         :first-child {
             padding: 0 8rem;
+            animation: ${SlideInLeft} 1s ease; 
         }
 
         :nth-child(2) {
-            padding: 0 4rem;            
+            padding: 0 4rem;     
+            animation: ${SlideInRight} 1s ease;       
         }
     }
 `
 
-export const About__Image = styled.div`
+export const AboutImage = styled.div`
     position: relative;
     display: grid;
     place-items: center;
     height: 100%;
     min-height: 24rem;
-
+    
     img {
         --size: 18rem;
         width: var(--size);
@@ -42,7 +65,7 @@ export const About__Image = styled.div`
         object-position: top;
         z-index: 2;
     }
-
+    
     ::after {
         content: '';
         position: absolute;
@@ -64,7 +87,7 @@ export const About__Image = styled.div`
     }
 `
 
-export const About__Content = styled.p`
+export const AboutContent = styled.p`
     color: var(--text-color-1);
     margin: 4rem 0;
 `

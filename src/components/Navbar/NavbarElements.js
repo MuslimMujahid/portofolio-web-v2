@@ -9,13 +9,13 @@ export const Nav = styled.nav`
     z-index: 2;
 `
 
-export const Nav__Container = styled.div`
+export const NavContainer = styled.div`
     display: flex;
     justify-content: space-between;
     height: 2.8rem;
 `
 
-export const Nav__Logo = styled.div`
+export const NavLogo = styled.div`
     display: grid;
     place-items: center;
     img {
@@ -23,7 +23,7 @@ export const Nav__Logo = styled.div`
     }
 `
 
-export const Nav__Links = styled.ul`
+export const NavLinks = styled.ul`
     display: flex;
 
     & > *:last-child {
@@ -31,7 +31,7 @@ export const Nav__Links = styled.ul`
     } 
 `
 
-export const Nav__Links__item = styled.li`
+export const NavLinksitem = styled.li`
     position: relative;
     display: grid;
     place-items: center;

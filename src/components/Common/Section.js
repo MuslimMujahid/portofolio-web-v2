@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Section__Title = styled.p`
+export const SectionTitle = styled.p`
     color: var(--text-color-1);
     font-size: 3.38rem;
     position: relative;

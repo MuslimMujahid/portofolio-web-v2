@@ -6,21 +6,21 @@ export const Container = styled.div`
     color: #FFFFFF;
 `
 
-export const Hero__Container = styled.div`
+export const HeroContainer = styled.div`
     height: 32rem;
     display: flex;
 `
 
-export const Hero__Links = styled.div`
+export const HeroLinks = styled.div`
     width: 6rem;
     height: 8rem;
     border-right: solid 2px var(--primary-color-3);
     /* margin-right: 8rem; */
 `
 
-export const Hero__Links__item = styled.div``
+export const HeroLinksItem = styled.div``
 
-export const Hero__Captions = styled.div`
+export const HeroCaptions = styled.div`
     position: relative;
     display: grid;
     place-items: center;

@@ -1,29 +1,29 @@
 import React from 'react'
 import {
     Container,
-    Hero__Container,
-    Hero__Links,
-    Hero__Links__item,
-    Hero__Captions
+    HeroContainer,
+    HeroLinks,
+    HeroLinksItem,
+    HeroCaptions
 } from './HeroElements'
 
 const Hero = () => {
     return (
         <Container> 
-            <Hero__Container>
-                <Hero__Links>
-                    <Hero__Links__item>Github</Hero__Links__item>
-                    <Hero__Links__item>Linkedin</Hero__Links__item>
-                    <Hero__Links__item>Email</Hero__Links__item>
-                </Hero__Links>
-                <Hero__Captions>
+            <HeroContainer>
+                <HeroLinks>
+                    <HeroLinksItem>Github</HeroLinksItem>
+                    <HeroLinksItem>Linkedin</HeroLinksItem>
+                    <HeroLinksItem>Email</HeroLinksItem>
+                </HeroLinks>
+                <HeroCaptions>
                     <div>
                         <p>Muh. Muslim Al Mujahid</p>
                         <p>Web Developer</p>
                         <p>"I feel most alive when i am learning and creating new things..."</p>
                     </div>
-                </Hero__Captions>
-            </Hero__Container>
+                </HeroCaptions>
+            </HeroContainer>
         </Container>
     )
 }

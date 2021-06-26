@@ -10,7 +10,7 @@ export const Button = styled.button`
     transition: all ease .2s;  
 `
 
-export const Button_0 = styled(Button)`
+export const Button0 = styled(Button)`
     color: var(--text-color-1);
     background: var(--primary-color-3);
     border: solid 2px var(--primary-color-3);
@@ -21,7 +21,7 @@ export const Button_0 = styled(Button)`
     }
 `
 
-export const Button_1 = styled(Button)`
+export const Button1 = styled(Button)`
     color: var(--text-color-2);
     background: transparent;
     border: solid 2px var(--primary-color-3);

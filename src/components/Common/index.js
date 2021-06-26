@@ -1,4 +1,4 @@
 import Button from './Button'
-import { Section__Title } from './Section'
+import { SectionTitle } from './Section'
 
-export { Button, Section__Title }
+export { Button, SectionTitle }
