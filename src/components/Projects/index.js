@@ -15,13 +15,23 @@ import {
 import {
     SectionTitle,
     Button
-} from '../Common/Section'
+} from '../Common/'
 
 const Projects = () => {
 
     const projects_data = [
         {
-            image: '#',
+            image: '/projects/shibasama.jpg',
+            desc: 'Platform to watch anime stored locally. Tracking new episodes and series with API provided by kitsu.io.',
+            stacks: ['Vue', 'Tailwind']
+        },
+        {
+            image: '/projects/shibasama.jpg',
+            desc: 'Platform to watch anime stored locally. Tracking new episodes and series with API provided by kitsu.io.',
+            stacks: ['Vue', 'Tailwind']
+        },
+        {
+            image: '/projects/shibasama.jpg',
             desc: 'Platform to watch anime stored locally. Tracking new episodes and series with API provided by kitsu.io.',
             stacks: ['Vue', 'Tailwind']
         }
@@ -49,7 +59,8 @@ const Projects = () => {
                                 </ProjectInfoStacks>
                             </ProjectInfo>
                             <ProjectLinks>
-                                
+                                <Button width="8rem" height="2.8rem" type={1}>Live Demo</Button>
+                                <Button width="8rem" height="2.8rem" type={1}>Repository</Button>
                             </ProjectLinks>
                         </ProjectsListItem>
                     )
