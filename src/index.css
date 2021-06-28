@@ -10,6 +10,28 @@
 
   --page-space: 8rem;
   --item-space: .8rem;
+
+  --lg: 992px;
+  --md: 768px;
+  --sm: 576px;
+}
+
+@media only screen and (max-width: 992px) {
+  :root {
+    --page-space: 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  :root {
+    --page-space: 1rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  :root {
+    --page-space: .5rem;
+  }
 }
 
 li {
@@ -32,9 +54,4 @@ body {
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }

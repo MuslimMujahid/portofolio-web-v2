@@ -8,11 +8,10 @@ const App = () => {
   return (
     <div className="App">
       <Navbar/>
-      <Hero/>
+      {/* <Hero/>
       <About/>
       <Projects/>
-      <Contact/>
-      Portofolio web
+      <Contact/> */}
     </div>
   );
 }
