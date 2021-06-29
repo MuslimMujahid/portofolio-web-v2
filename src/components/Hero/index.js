@@ -18,7 +18,7 @@ const Hero = () => {
                 <HeroLinks>
                     <HeroLinksItem>Github</HeroLinksItem>
                     <HeroLinksItem>Linkedin</HeroLinksItem>
-                    <HeroLinksItem>Email</HeroLinksItem>
+                    {/* <HeroLinksItem>Email</HeroLinksItem> */}
                 </HeroLinks>
                 <HeroCaptions>
                     <div>
