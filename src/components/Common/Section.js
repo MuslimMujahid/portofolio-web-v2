@@ -6,6 +6,19 @@ export const SectionTitle = styled.p`
     position: relative;
     width: max-content;
 
+    @media (max-width: 992px) {
+        font-size: 2.8rem;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 2.2rem;
+    }
+
+    @media (max-width: 576px) {
+        font-size: 1.8rem;
+    }
+    
+
     ::after {
         content: '';
         position: absolute;

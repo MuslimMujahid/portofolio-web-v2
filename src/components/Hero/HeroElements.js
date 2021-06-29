@@ -146,6 +146,12 @@ export const HeroCaptions = styled.div`
         }
     } 
 
+    p:nth-child(3) {
+        @media (max-width: 576px) {
+            font-size: 1rem;
+        }
+    }
+
     ::after {
         content: '';
         position: absolute;
