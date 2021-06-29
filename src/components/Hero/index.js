@@ -4,7 +4,11 @@ import {
     HeroContainer,
     HeroLinks,
     HeroLinksItem,
-    HeroCaptions
+    HeroCaptions,
+    HeroLinksMobile,
+    HeroLinksMobileItem,
+    GithubIcon,
+    LinkedinIcon
 } from './HeroElements'
 
 const Hero = () => {
@@ -23,6 +27,10 @@ const Hero = () => {
                         <p>"I feel most alive when i am learning and creating new things..."</p>
                     </div>
                 </HeroCaptions>
+                <HeroLinksMobile>
+                    <HeroLinksMobileItem><GithubIcon/></HeroLinksMobileItem>
+                    <HeroLinksMobileItem><LinkedinIcon/></HeroLinksMobileItem>
+                </HeroLinksMobile>
             </HeroContainer>
         </Container>
     )
