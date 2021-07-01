@@ -26,6 +26,10 @@ export const Button1 = styled(Button)`
     background: transparent;
     border: solid 2px var(--primary-color-3);
 
+    * {
+        color: var(--text-color-2);
+    }
+
     :hover {
         cursor: pointer;
         background: var(--primary-color-3);
