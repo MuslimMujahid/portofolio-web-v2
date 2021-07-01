@@ -18,6 +18,11 @@ export const ProjectsListItem = styled.div`
     display: grid;
     grid-template-columns: max-content auto max-content;
     margin-bottom: 1.8rem;
+
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+    }
 `
 export const ProjectImage = styled.div`
     width: 320px;
@@ -33,11 +38,15 @@ export const ProjectInfo = styled.div`
     flex-direction: column;
     justify-content: space-between;
     padding: 0 .8rem;
+
+    @media (max-width: 768px) {
+        padding: 0;
+    }
 `
 export const ProjectInfoDesc = styled.p``
 export const ProjectInfoStacks = styled.div`
     display: flex;
-    `
+`
 export const ProjectInfoStacksItem = styled.div`
     background: #AEABCE;
     color: #1D1E2D;
@@ -51,5 +60,14 @@ export const ProjectLinks = styled.div`
 
     & > *:first-child {
         margin-bottom: .4rem;
+    }
+
+    @media (max-width: 768px) {
+        display: flex;
+        margin-top: 1rem;
+
+        & > *:last-child {
+            margin-left: .4rem;
+        }
     }
 `
