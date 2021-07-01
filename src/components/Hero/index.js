@@ -16,8 +16,12 @@ const Hero = () => {
         <Container> 
             <HeroContainer>
                 <HeroLinks>
-                    <HeroLinksItem>Github</HeroLinksItem>
-                    <HeroLinksItem>Linkedin</HeroLinksItem>
+                    <HeroLinksItem>
+                        <a target="__blank" href="https://github.com/MuslimMujahid">Github</a>
+                    </HeroLinksItem>
+                    <HeroLinksItem>
+                        <a target="__blank" href="https://www.linkedin.com/in/muslim-mujahid-0638b3138/">Linkedin</a>
+                    </HeroLinksItem>
                     {/* <HeroLinksItem>Email</HeroLinksItem> */}
                 </HeroLinks>
                 <HeroCaptions>
@@ -28,8 +32,16 @@ const Hero = () => {
                     </div>
                 </HeroCaptions>
                 <HeroLinksMobile>
-                    <HeroLinksMobileItem><GithubIcon/></HeroLinksMobileItem>
-                    <HeroLinksMobileItem><LinkedinIcon/></HeroLinksMobileItem>
+                    <HeroLinksMobileItem>
+                        <a target="__blank" href="https://github.com/MuslimMujahid">
+                            <GithubIcon/>
+                        </a>
+                    </HeroLinksMobileItem>
+                    <HeroLinksMobileItem>
+                        <a target="__blank" href="https://www.linkedin.com/in/muslim-mujahid-0638b3138/">
+                            <LinkedinIcon/>
+                        </a>
+                    </HeroLinksMobileItem>
                 </HeroLinksMobile>
             </HeroContainer>
         </Container>
