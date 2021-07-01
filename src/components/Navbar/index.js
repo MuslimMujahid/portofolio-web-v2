@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-scroll'
 import {
     Nav,
     NavContainer,
@@ -17,16 +18,20 @@ const Navbar = () => {
 
     const links = [
         {
+            name: 'Home',
+            path: 'HeroSection'
+        },
+        {
             name: 'About',
-            path: '#'
+            path: 'AboutSection'
         },
         {
             name: 'Projects',
-            path: '#'
+            path: 'ProjectsSection'
         },
         {
             name: 'Contact',
-            path: '#'
+            path: 'ContactSection'
         }
     ]
 
@@ -40,11 +45,13 @@ const Navbar = () => {
                     {
                         links.map(l => 
                             l.name !== 'Contact' &&
-                            <NavLinksitem>{l.name}</NavLinksitem>
+                            <NavLinksitem>
+                                <Link smooth={true} to={l.path}>{l.name}</Link>
+                            </NavLinksitem>
                         )
                     }
                     <Button type={1} width="8rem" height="2.6rem">
-                        Contact
+                        <Link smooth={true} to='ContactSection'>Contact</Link>
                     </Button>     
                 </NavLinks>
                 <HamburgerMenu onClick={() => setShowMobileMenu(!showMobileMenu)}/>
@@ -52,7 +59,7 @@ const Navbar = () => {
                     showMobileMenu &&
                     <NavLinksMobile>
                     {
-                        links.map(l => <NavLinksItemMobile to={l.path}>{l.name}</NavLinksItemMobile>)
+                        links.map(l => <NavLinksItemMobile><Link to={l.path}>{l.name}</Link></NavLinksItemMobile>)
                     }
                     </NavLinksMobile>
                 }

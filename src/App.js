@@ -1,3 +1,4 @@
+import { Element } from 'react-scroll'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -8,10 +9,10 @@ const App = () => {
   return (
     <div className="App">
       <Navbar/>
-      <Hero/>
-      <About/>
-      <Projects/>
-      <Contact/>
+      <Element name="HeroSection"><Hero/></Element>
+      <Element name="AboutSection"><About/></Element>
+      <Element name="ProjectsSection"><Projects/></Element>
+      <Element name="ContactSection"><Contact/></Element>
     </div>
   );
 }
