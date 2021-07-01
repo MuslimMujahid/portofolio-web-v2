@@ -10,6 +10,10 @@ export const ContactContainer = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
 
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
+
     & > *:first-child {
         margin-right: 4rem;    
     }
@@ -24,15 +28,16 @@ export const ContactContainer = styled.div`
         position: relative;
         width: 100%;
         height: 100%;
-        max-width: 500px;
+        max-width: 350px;
+        max-height: 350px;
 
         ::after {
             content: '';
             position: absolute;
             right: 0;
             bottom: 0;
-            width: 18rem;
-            height: 18rem;
+            width: 14rem;
+            height: 14rem;
             border: solid 2px var(--primary-color-3);
         }
 
@@ -41,19 +46,42 @@ export const ContactContainer = styled.div`
             position: absolute;
             left: 0;
             top: 0;
-            width: 18rem;
-            height: 18rem;
+            width: 14rem;
+            height: 14rem;
             border: solid 2px var(--primary-color-3);
+        }
+
+        @media (max-width: 768px) {
+            display: none;
         }
     }
 `
 export const ContactForm = styled.form`
     margin-top: 4rem;
+
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 28rem;
+        width: 100%;
+        & > * {
+            width: 100%;
+        }
+    }
     
     .row {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: .8rem;
+        display: flex;
+        gap: .5rem;
+
+        & > * {
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            gap: 1.2rem;
+        }
     }
 
     & > * {

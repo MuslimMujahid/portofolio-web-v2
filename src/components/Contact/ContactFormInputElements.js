@@ -20,6 +20,7 @@ export const Input = styled.input.attrs(props => ({
     border-radius: 4px;
     outline: none;
     padding: 0 .6rem;
+    border: none;
 `
 
 export const TextArea = styled.textarea.attrs(props => ({
@@ -31,4 +32,5 @@ export const TextArea = styled.textarea.attrs(props => ({
     outline: none;
     padding: .4rem .6rem;
     resize: none;
+    border: none;
 `
