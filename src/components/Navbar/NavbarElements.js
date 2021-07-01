@@ -18,7 +18,7 @@ export const Nav = styled.nav`
     background: var(--primary-color-1);
     color: var(--text-color-1);
     padding: .6rem var(--page-space) 0 var(--page-space);
-    z-index: 2;
+    z-index: 3;
 `
 
 export const NavContainer = styled.div`
