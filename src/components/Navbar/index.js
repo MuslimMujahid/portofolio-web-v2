@@ -16,6 +16,14 @@ const Navbar = () => {
 
     const [showMobileMenu, setShowMobileMenu] = useState(false)
 
+    const handleClickBurgerMenuIcon = () => {
+        setShowMobileMenu(!showMobileMenu)
+    }
+
+    const handleClickNavLinkMobileItem = () => {
+        setShowMobileMenu(false)
+    }
+
     const links = [
         {
             name: 'Home',
@@ -54,12 +62,16 @@ const Navbar = () => {
                         <Link smooth={true} to='ContactSection'>Contact</Link>
                     </Button>     
                 </NavLinks>
-                <HamburgerMenu onClick={() => setShowMobileMenu(!showMobileMenu)}/>
+                <HamburgerMenu onClick={handleClickBurgerMenuIcon}/>
                 {
                     showMobileMenu &&
                     <NavLinksMobile>
                     {
-                        links.map(l => <NavLinksItemMobile><Link to={l.path}>{l.name}</Link></NavLinksItemMobile>)
+                        links.map(l => 
+                            <NavLinksItemMobile>
+                                <Link to={l.path} onClick={handleClickNavLinkMobileItem}>{l.name}</Link>
+                            </NavLinksItemMobile>
+                        )
                     }
                     </NavLinksMobile>
                 }
