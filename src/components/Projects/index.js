@@ -21,21 +21,21 @@ const Projects = () => {
 
     const projects_data = [
         {
-            image: '%PUBLIC_URL%/projects/navins.jpg',
+            image: 'projects/navins.jpg',
             desc: 'Website for NAV|INS Co.',
             stacks: ['React', 'Sass'],
             demo: 'https://navinscounsellors.com',
             repo: '#'
         },
         {
-            image: '%PUBLIC_URL%/projects/gleditor.jpg',
+            image: 'projects/gleditor.jpg',
             desc: 'Editor built with javascript and webgl. Capable of creating geometry and line, change color, resizing, drag, and save/load.',
             stacks: ['JS', 'Webgl'],
             demo: 'https://muslimmujahid.github.io/cad-clone/',
             repo: 'https://github.com/MuslimMujahid/cad-clone'
         },
         {
-            image: '%PUBLIC_URL%/projects/shibasama.jpg',
+            image: 'projects/shibasama.jpg',
             desc: 'Platform to watch anime stored locally. Tracking new episodes and series with API provided by kitsu.io.',
             stacks: ['Vue', 'Tailwind'],
             demo: 'https://muslimmujahid.github.io/shibasama/#/',
