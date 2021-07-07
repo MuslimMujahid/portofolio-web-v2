@@ -47,7 +47,7 @@ const Navbar = () => {
         <Nav>
             <NavContainer>
                 <NavLogo>
-                    <img src="/Logo.png" alt="logo"/>
+                    <img src="https://muslimmujahid.github.io/portofolio-web-v2/Logo.png" alt="logo"/>
                 </NavLogo>
                 <NavLinks>
                     {

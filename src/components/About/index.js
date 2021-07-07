@@ -16,7 +16,7 @@ const About = () => {
             <AboutContainer>
                 <div>
                     <AboutImage>
-                        <img src="/profile.jpg" alt="my image" />
+                        <img src="https://muslimmujahid.github.io/portofolio-web-v2/profile.jpg" alt="my image" />
                     </AboutImage>
                 </div>
                 <div>
